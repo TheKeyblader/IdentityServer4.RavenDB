@@ -11,7 +11,7 @@ namespace Microsoft.Extensions.DependencyInjection
     public static class IdentityServerRavenDBBuilderExtensions
     {
         /// <summary>
-        /// Configures EF implementation of IClientStore, IResourceStore, and ICorsPolicyService with IdentityServer.
+        /// Configures RavenDB implementation of IClientStore, IResourceStore, and ICorsPolicyService with IdentityServer.
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <returns></returns>
