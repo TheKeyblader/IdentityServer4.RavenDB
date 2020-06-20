@@ -17,11 +17,12 @@ Not hard tested</PackageReleaseNotes>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageId>IdentityServer4.Contrib.RavenDB.Storage</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="IdentityServer4" Version="[4.0.0,5.0.0)" />
     <PackageReference Include="RavenDB.Client" Version="[4.2.0,5.0.0)" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
