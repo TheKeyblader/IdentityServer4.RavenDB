@@ -2,11 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/TheKeyblader/IdentityServer4.RavenDB</RepositoryUrl>
+    <PackageTags>ravendb identityserver</PackageTags>
+    <Authors>Jean-Francois Pustay</Authors>
+    <Company />
+    <Description>RavenDB persistence layer for IdentityServer4</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>First release
+Not hard tested</PackageReleaseNotes>
 
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="IdentityServer4" Version="4.0.0" />
-    <PackageReference Include="RavenDB.Client" Version="4.2.103" />
+    <PackageReference Include="IdentityServer4" Version="[4.0.0,5.0.0)" />
+    <PackageReference Include="RavenDB.Client" Version="[4.2.0,5.0.0)" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
   </ItemGroup>
 
   <ItemGroup>
