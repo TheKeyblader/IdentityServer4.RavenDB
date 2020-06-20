@@ -64,7 +64,7 @@ namespace IdentityServer4.RavenDB.Stores
             var scopes = scopeNames.ToArray();
 
             var query = Session.Query<Entities.ApiScope>()
-                .Where(x => scopes.Contains(x.Name));
+                .Where(x => x.Name.In(scopes));
 
             var results = await query.ToArrayAsync();
 
@@ -78,7 +78,7 @@ namespace IdentityServer4.RavenDB.Stores
             var scopes = scopeNames.ToArray();
 
             var query = Session.Query<Entities.IdentityResource>()
-                .Where(x => scopes.Contains(x.Name));
+                .Where(x => x.Name.In(scopes));
 
             var results = await query.ToArrayAsync();
 

@@ -4,6 +4,7 @@ using IdentityServer4.Models;
 using IdentityServer4.RavenDB.Mappers;
 using IdentityServer4.Stores;
 using Microsoft.Extensions.Logging;
+using Raven.Client.Documents;
 using Raven.Client.Documents.Session;
 using Entities = IdentityServer4.RavenDB.Entities;
 
@@ -22,7 +23,7 @@ namespace IdentityServer4.RavenDB.Stores
 
         public virtual async Task<Client> FindClientByIdAsync(string clientId)
         {
-            var client = await Session.LoadAsync<Entities.Client>(clientId);
+            var client = await Session.Query<Entities.Client>().FirstOrDefaultAsync(c => c.ClientId == clientId);
             if (client == null) return null;
 
             var model = client.ToModel();

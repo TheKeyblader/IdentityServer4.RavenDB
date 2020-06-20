@@ -11,7 +11,7 @@ namespace IdentityServer4.RavenDB.Entities
         public string Name { get; set; }
         public string DisplayName { get; set; }
         public string Description { get; set; }
-        public string AllowedAccessTokenSigningAlgorithms { get; set; }
+        public List<string> AllowedAccessTokenSigningAlgorithms { get; set; }
         public bool ShowInDiscoveryDocument { get; set; } = true;
         public List<Secret> Secrets { get; set; }
         public List<string> Scopes { get; set; }
