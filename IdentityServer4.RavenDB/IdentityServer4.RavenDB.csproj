@@ -17,7 +17,7 @@ Not hard tested</PackageReleaseNotes>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageId>IdentityServer4.Contrib.RavenDB.Storage</PackageId>
+    <PackageId>IdentityServer4.Contrib.RavenDB</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="IdentityServer4" Version="[4.0.0,5.0.0)" />
