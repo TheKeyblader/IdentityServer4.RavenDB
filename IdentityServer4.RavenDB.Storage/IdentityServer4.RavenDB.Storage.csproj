@@ -10,14 +10,14 @@
     <RepositoryUrl>https://github.com/TheKeyblader/IdentityServer4.RavenDB</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>ravendb identityserver</PackageTags>
-    <PackageReleaseNotes>First release
-Not hard tested</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated Dependencies</PackageReleaseNotes>
 
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageId>IdentityServer4.Contrib.RavenDB.Storage</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
