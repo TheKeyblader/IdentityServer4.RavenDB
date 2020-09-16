@@ -21,10 +21,10 @@ Not hard tested</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="[9.0.0,10.0.0)" />
-    <PackageReference Include="IdentityServer4.Storage" Version="[4.0.0,5.0.0)" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.5" />
-    <PackageReference Include="RavenDB.Client" Version="[4.2.0,5.0.0)" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="IdentityServer4.Storage" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.8" />
+    <PackageReference Include="RavenDB.Client" Version="5.0.2" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 
